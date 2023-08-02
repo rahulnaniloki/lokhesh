@@ -96,17 +96,31 @@ nav.sticky .media-icons a{
   color:var(--white-color);
 }
 
-/* side navigation Menu Button CSS */
-nav .menu-btn,
-.navbar .menu .cancel-btn{
-  position:absolute;
-  color:var(--white-color);
-  right:30px;
-  top:20px;
-  font-size: 20px;
+/* Base styles for the button */
+.button {
+  display: inline-block;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Glow effect on hover */
+.glow-button button {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
-  display: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Glow effect on hover */
+.glow-button button:hover {
+  box-shadow: 0 0 10px #3498db;
+}
+
 }
 nav .menu-btn{
   color:var(--primary-color);
